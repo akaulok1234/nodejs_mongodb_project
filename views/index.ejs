@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Wellness</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <img id="logo" src="/images/logo1.png" alt="Logo">
+    </div>
+    <div class="container">
+        <h1>Welcome to Wellness</h1>
+        <h2>How are you feeling today?</h2>
+        <form action="/data" method="POST">
+            <p>Please select your mood today:</p>
+            <input type="radio" id="smile" name="mood" value="smile" required>
+            <label for="smile">😀</label>
+            <input type="radio" id="neutral" name="mood" value="neutral">
+            <label for="neutral">😐</label>
+            <input type="radio" id="sad" name="mood" value="sad">
+            <label for="sad">🙁</label>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <form action="/manager" method="GET">
+            <button type="submit">Manager Login</button>
+        </form>
+    </div>
+</body>
+</html>

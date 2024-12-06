@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manager Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <img id="logo" src="/images/logo1.png" alt="Logo">
+    </div>
+    <div class="container">
+        <h1>Manager Dashboard</h1>
+        <form action="/find" method="POST">
+            <p>Select mood to find count:</p>
+            <input type="radio" id="smile" name="mood" value="smile" required>
+            <label for="smile">😀</label>
+            <input type="radio" id="neutral" name="mood" value="neutral">
+            <label for="neutral">😐</label>
+            <input type="radio" id="sad" name="mood" value="sad">
+            <label for="sad">🙁</label>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
